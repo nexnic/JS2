@@ -1,0 +1,19 @@
+{
+  "name": "js2",
+  "version": "1.0.0",
+  "description": "This is page for social media",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nexnic/JS2.git"
+  },
+  "author": "Kent Erik Hole",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nexnic/JS2/issues"
+  },
+  "homepage": "https://github.com/nexnic/JS2#readme"
+}
