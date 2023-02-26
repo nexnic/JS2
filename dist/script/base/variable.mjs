@@ -15,3 +15,13 @@ export const API_URL = {
     post_URL: '/api/v1/social/posts'
 }
 
+export const metode_API = {
+    postData: {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(userData),
+    }, 
+    
+}
