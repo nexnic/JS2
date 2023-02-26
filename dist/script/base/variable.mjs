@@ -23,5 +23,11 @@ export const metode_API = {
         },
         body: JSON.stringify(userData),
     }, 
-    
+    fetchData: {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${token}`,
+        }
+    }
 }
