@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "sass src/sass:dist/css",
-    "watch": "sass --watch src:sass:dist/css",
+    "watch": "sass --watch src:sass:dist/css & live-server",
     "docs": "jsdoc -c ./conf.json -r"
   },
   "repository": {
