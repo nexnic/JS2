@@ -5,3 +5,6 @@
 
 ## folder /folderName 
 ## file /filename 
+
+## Node_modules for sass & bootstrap 
+/Node_modules
