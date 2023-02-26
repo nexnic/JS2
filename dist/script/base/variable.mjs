@@ -21,13 +21,13 @@ export const metode_API = {
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify(userData),
+        body: JSON.stringify(),
     }, 
     fetchData: {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
-            Authorization: `Bearer ${token}`,
+            Authorization: ``,
         }
     }
 }
