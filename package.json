@@ -4,7 +4,8 @@
   "description": "This is page for social media",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "sass src/sass:dist/css",
+    "watch": "sass --watch src:sass:dist/css"  
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "homepage": "https://github.com/nexnic/JS2#readme",
   "devDependencies": {
     "sass": "^1.58.3"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3"
   }
 }
