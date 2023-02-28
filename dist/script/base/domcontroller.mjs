@@ -10,9 +10,9 @@
 
     // Logg in form 
         // Email Form  
-            export const inputUserName = document.querySelector('#login_email');
+            export const loginUserName = document.querySelector('#login_email')
         // Password form 
-            export const inputPWD = document.querySelector('#login_password');
+            export const loginPWD = document.querySelector('#login_password');
         // Submit btn 
             export const btnLoginSubmit = document.querySelector('#login_submit');
         // Register user btn 
