@@ -15,6 +15,13 @@ export const API_URL = {
     post_URL: '/api/v1/social/posts'
 }
 
+// Value need for Register user 
+    // Emali , noroff.com !requier 
+    // User Name unix name !requier 
+    // Password need to be 8 long and unix sign !requier  
+    // Banner uploading a banner 
+    // User profile image 
+
 export const metode_API = {
     postData: {
         method: 'POST',
