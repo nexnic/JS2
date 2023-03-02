@@ -8,17 +8,14 @@
 
 // main 
 
-    // Logg in form 
-        // Email Form  
-            export const loginUserName = document.querySelector('#login_email')
-        // Password form 
-            export const loginPWD = document.querySelector('#login_password');
-        // Submit btn 
-            export const btnLoginSubmit = document.querySelector('#login_submit');
-        // Register user btn 
-            export const btnregister = document.querySelector('#btn_register');
-        // Forgot Password Btn 
-            export const forgotPWD =  document.querySelector('#btn_forgotPWD');
-
+    // Sign In form 
+        // Form 
+           export const formsn = document.querySelector('#signin');
+        // Email Input  
+            export const formsnEmail = document.querySelector('#signin_email');
+        // Password 
+            export const formsnPassword = document.querySelector('#signin_password');
+        // Submit Button 
+            export const formsnbtn = document.querySelector('#s')
 // footer 
 

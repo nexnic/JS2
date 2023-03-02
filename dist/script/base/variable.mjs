@@ -7,6 +7,11 @@
 
 'use strict';
 
+export const filterREG = [
+    { name: 'domain', item: 'noroff.no' },
+    { name: 'domain', item: 'stud.noroff.no'},
+]
+    
 
 export const API_URL = {
     BASE_URL: 'https://nf-api.onrender.com',

@@ -25,19 +25,21 @@
             </p>
         </div>
         <div>
-            <form for="getinfo">
+            <form method="post" id="signin">
                 <!-- Need to add logo  -->
                 <img src="" alt="">
                 <h1 id="headline__form">Pleas sign in</h1>
                 <div>
-                    <input type="email" id="login_email" placeholder="name@noroff.no">
-                    <label for=""> Email address</label>
+                    <label for="email"></label>
+                    <input type="text" id="signin_email" name="email" plassholder="email">
+                    <small name ="email_error"></small>
                 </div>
                 <div>
-                    <input type="password" id="login_password" placeholder="Password">
+                    <input type="text" id="signin_password" name="password" placeholder="password">
                     <label for="">Password</label>
+                    <small></small>
                 </div>
-                <button class="btn btn-primary" id="login_submit" type="submit">Sign in</button>
+                <button type="submit">Sign in</button>
                 <ul>
                     <li>
                         <a href="#" id="btn_register">Register</a>
@@ -51,5 +53,6 @@
     </main>
     <footer></footer>
     <script type="module" src="./dist/script/base/base.mjs"></script>
+    <script type="module" src="./dist/script/components/form.mjs"></script>
 </body>
 </html>

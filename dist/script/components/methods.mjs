@@ -16,7 +16,7 @@ let MetodData = {
     };
 
 // POST 
-    function metodPOST(value1, value2){
+   export function metodPOST(value1, value2){
         let postData = MetodData;
         let tempUser = userData;
         postData['method'] = 'POST'
@@ -24,8 +24,7 @@ let MetodData = {
         tempUser['password'] = value2
         postData['body'] = JSON.stringify(tempUser);
         console.log(postData)
-
-        
+        return postData;
         
     }
 
