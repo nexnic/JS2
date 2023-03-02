@@ -9,7 +9,7 @@ export function ValidEmail(value1) {
     return checkEmail 
 }
 
-function validPWD(value1) {
+export function validPWD(value1) {
     let _password = value1; 
 
     let Strongreg = new RegExp('^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})');
