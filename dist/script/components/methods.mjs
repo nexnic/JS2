@@ -27,5 +27,3 @@ let MetodData = {
         return postData;
         
     }
-
-    metodPOST(email, password)
