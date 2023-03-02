@@ -1,13 +1,14 @@
 
-export async function fetchAPI(value1, value2 , value3, ) {
+export async function fetchAPI(value1, value2) {
     const Base_url = 'https://nf-api.onrender.com'
     const Endpoint = findAPIID(value1);
     const url = Base_url + Endpoint;
-    const methodData = value3(value2, value3);
+    const method = value2;
     try {
-        const response = await fetch(url, methodData);
-        const json = await response.json();
-        console.log(json);
+        const response = await fetch(url, method);
+        const data = await response.json();
+        
+        return data
     } catch (error) {
         console.log(error);
     }

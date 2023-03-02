@@ -1,6 +1,8 @@
 import {formsn } from '../base/domcontroller.mjs';
-import { ValidEmail , validPWD } from './validator.mjs';
-import {fetchAPI } from './fetch.mjs';
+import { ValidEmail  } from './validator.mjs';
+import { metodPOST } from './methods.mjs';
+import { fetchAPI } from './fetch.mjs';
+
 
 
 formsn.addEventListener('submit', (event) => {
@@ -9,8 +11,10 @@ formsn.addEventListener('submit', (event) => {
     let _password = formsn.elements['password'].value
 
     let check = ValidEmail(email);
-
+    let method = metodPOST(email, _password)
     if(check) {
+        const promiseA = new Promise(fetchAPI(id, method))
+        const promiseb = promiseA.then(console.log(promiseA), console.log(promiseA));
         
     } else {
         
