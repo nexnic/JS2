@@ -8,7 +8,7 @@ formsn.addEventListener('submit', (event) => {
 
     let check = NewValidEmail(email);
     if(check) {
-        
+
     } else {
         
     }
@@ -23,23 +23,6 @@ function NewValidEmail(value1) {
     let checkEmail =  regex.test(email);
     
     return checkEmail 
-}
-
-function validEmail(value1) {
-    let email = value1
-    let splitemail = email.split('@');
-    let Domain = splitemail[1];
-    let Reg = /\S+@\S+\.\S+/; 
-    let checkMail = Reg.test(email);
-
-    filterREG.find(({ item })=> {
-        if(Domain && checkMail) {
-            return true
-        }
-        else{
-            return false 
-        }
-    }) 
 }
 
 function validPWD(value1) {
