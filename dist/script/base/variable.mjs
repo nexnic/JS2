@@ -12,6 +12,11 @@ export const filterREG = [
     { name: 'domain', item: 'stud.noroff.no'},
 ]
     
+export const apiID = {
+    1: '/api/v1/social/auth/login',
+    2: '/api/v1/social/auth/register',
+};
+
 
 export const API_URL = {
     BASE_URL: 'https://nf-api.onrender.com',
