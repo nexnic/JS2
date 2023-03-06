@@ -13,16 +13,24 @@ formsn.addEventListener('submit', (event) => {
     let check = ValidEmail(email);
     let method = metodPOST(email, _password)
     if(check) {
-        const promiseA = new Promise(fetchAPI(id, method))
-        const promiseb = promiseA.then(console.log(promiseA), console.log(promiseA));
-        
-    } else {
-        
+        // let data = fetchAPI(id, method)
+        // console.log(data);
+        let userData = fetchAPI(id, method);
+        console.log(userData)
+        const promise1 = Promise.resolve(userData)
+        promise1.then((value) =>{
+            localStorage.setItem('accessToken', `${value.accessToken}` );
+            localStorage.setItem('email', `${value.email}`);
+            localStorage.setItem('name', `${value.name}`);
+        } )
+        console.log(promise1)
+        window.location.href = 'main.html'
     }
     event.preventDefault();
 })
 
-// Test new metod 
 
+
+// accessToken
 
 
