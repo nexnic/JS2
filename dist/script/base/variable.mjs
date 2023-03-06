@@ -11,7 +11,9 @@ export const filterREG = [
     { name: 'domain', item: 'noroff.no' },
     { name: 'domain', item: 'stud.noroff.no'},
 ]
-    
+
+export const BASE_URL = 'https://nf-api.onrender.com';
+
 export const apiID = {
     1: '/api/v1/social/auth/login',
     2: '/api/v1/social/auth/register',
