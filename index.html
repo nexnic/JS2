@@ -15,8 +15,44 @@
 </head>
 <body>
     <header></header>
-    <main></main>
+    <main>
+        <div>   
+            <h1>
+                Smedia
+            </h1>
+            <p class="lead">
+                Connect and Share with the World: Join the Social Media Revolution!
+            </p>
+        </div>
+        <div>
+            <form method="post" id="signin">
+                <!-- Need to add logo  -->
+                <img src="" alt="">
+                <h1 id="headline__form">Pleas sign in</h1>
+                <div>
+                    <label for="email"></label>
+                    <input type="text" id="signin_email" name="email" plassholder="email">
+                    <small name ="email_error"></small>
+                </div>
+                <div>
+                    <input type="text" id="signin_password" name="password" placeholder="password">
+                    <label for="">Password</label>
+                    <small></small>
+                </div>
+                <button type="submit">Sign in</button>
+                <ul>
+                    <li>
+                        <a href="#" id="btn_register">Register</a>
+                    </li>
+                    <li>
+                        <a href="#" id="btn_forgotPWD">forgot password</a>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </main>
     <footer></footer>
-    <script type="module" src="./dist/script/base/"></script>
+    <script type="module" src="./dist/script/base/base.mjs"></script>
+    <script type="module" src="./dist/script/components/form.mjs"></script>
 </body>
 </html>
