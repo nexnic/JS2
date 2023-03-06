@@ -23,7 +23,6 @@ let MetodData = {
         tempUser['email'] = value1
         tempUser['password'] = value2
         postData['body'] = JSON.stringify(tempUser);
-        console.log(postData)
         return postData;
         
     }
