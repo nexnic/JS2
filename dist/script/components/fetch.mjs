@@ -1,27 +1,48 @@
 
+import { apiID , BASE_URL } from "../base/variable.mjs";
+
 export async function fetchAPI(value1, value2) {
-    const Base_url = 'https://nf-api.onrender.com'
-    const Endpoint = findAPIID(value1);
-    const url = Base_url + Endpoint;
+    const url = findAPIID(value1);
     const method = value2;
     try {
         const response = await fetch(url, method);
-        const data = await response.json();
-        
-        return data
+        if(response.status === 200) {
+            return response.json();
+        }else{
+            console.log('fail');
+        }
     } catch (error) {
         console.log(error);
+    }
+}
+
+
+export async function fetchData(value1, value2){
+    const url = findAPIID(value1);
+    const method = value2;
+
+    fetch(url,method)
+    
+    
+}
+
+export async function fetchlogin(value1, value2) {
+    const url = findAPIID(value1);
+    const method = value2;
+    try {
+        fetch(url, method) 
+        .then((response) => response.json)
+    }catch(error){
+        console.log(error)
     }
 
 }
 
-const apiID = {
-    1: '/api/v1/social/auth/login',
-    2: '/api/v1/social/auth/register',
-};
-
 function findAPIID(value1) {
     let index = value1
     let Endpoint = apiID[index];
-    return Endpoint
+    let url = BASE_URL + Endpoint;
+    return url
 }
+
+
