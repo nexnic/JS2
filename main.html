@@ -8,11 +8,49 @@
     <title>Document</title>
 </head>
 <body>
-    <header></header>
-    <main>
-        <section id="newsFeed"></section>
-    </main>
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded" aria-label="Eleventh navbar example">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Smedia</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarsExample09">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="" alt="" width="22" height="22" class="rounded-circle">
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown09">
+                  <li>
+                    <a class="dropdown-item" href="#" id="btn_profile">
+                        <i class="fa-solid fa-user"></i>
+                        Profile
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#" id="btn_settings">
+                        <i class="fa-solid fa-gear"></i>
+                        Settings 
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#" id="btn_logout">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Logout
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form method="post" id="form-search">
+              <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+            </form>
+          </div>
+        </div>
+      </nav>
     <script type="module" src="./dist/script/pages/main.mjs"></script>
     <script type="module" src="./dist/script/components/form.mjs"></script>
 </body>
