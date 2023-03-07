@@ -5,7 +5,7 @@ import { fetchAPI } from './fetch.mjs';
 
 
 
-formsn.addEventListener('submit', (event) => {
+/* formsn.addEventListener('submit', (event) => {
     let id = 1;
     let email = formsn.elements['email'].value 
     let _password = formsn.elements['password'].value
@@ -35,7 +35,7 @@ formsn.addEventListener('submit', (event) => {
     event.preventDefault();
 })
 
-
+*/
 
 
 
