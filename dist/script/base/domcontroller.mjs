@@ -25,4 +25,6 @@
     // form 
         // Commect 
             export const formsmComment = document.querySelector('#comment');
-        
+    // Form 
+        // Search Bar 
+            export const formsmSearch =  document.querySelector('#form-search');
