@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Social Media">
+    <meta name="keywords" content="social, media, connect,">
+    <meta name="author" content="Kent Erik Hole">
+    <title>Document</title>
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/6b4917e13e.js" crossorigin="anonymous"></script>
+    <!-- CSS file -->
+    <link rel="stylesheet" href="./dist/css/main.css">
+</head>
+<body>
+    <main class="container-fluid ">
+        <div class="d-flex flex-wrap justify-content-center gap-2">
+          <img src="./assets/images/userprofile.jpg" class="img-fluid rounded-circle" alt="smaple image">
+          <div>
+            <ul class="text-center list-unstyled">
+              <li>
+                <H2>Calvin Oliver</H2>
+              </li>
+              <li>
+                <p>
+                  <span class="fw-bolder">Email</span>
+                  <span class="text-muted">calvin.oliver@example.com</span>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="fw-bolder">Joined</span>
+                  <span class="text-muted">November 2021</span>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="fw-bolder">Place</span>
+                  <span class="text-muted">Norway</span>
+                </p>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+        
+        <div class="col">
+            <div class="accordion accordion-flush">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+                            Bio
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p id="profile-bio">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet dolores officiis quo autem soluta ea eligendi? Corrupti possimus iste voluptas, illum fuga sapiente mollitia. Eligendi praesentium pariatur dignissimos ipsum dolore?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Settings
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul class="d-flex flex-wrap gap-4 justify-content-center list-unstyled">
+                                <li>
+                                    <button type="button"  onclick="modelprofile('image')" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popup-form-profile">
+                                    Change Profile image
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button"  onclick="modelprofile('email')" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popup-form-profile">
+                                        Change Email
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button"  onclick="modelprofile('password')" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popup-form-profile">
+                                        Change Password
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button"  onclick="modelprofile('bio')" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popup-form-profile">
+                                        Change Bio
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+    
+    </main>
+</body>
+</html>
