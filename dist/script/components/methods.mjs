@@ -7,6 +7,14 @@ let MetodData = {
     }
 }
 
+let MetodToken = {
+    method: '2',
+    headers: {
+        'Content-Type' : 'application/json',
+    }
+}
+
+
     let email =  'test_user_demo@noroff.no'
     let password = 'testtest1234'
 
@@ -24,5 +32,16 @@ let MetodData = {
         tempUser['password'] = value2
         postData['body'] = JSON.stringify(tempUser);
         return postData;
-        
     }
+
+    export function MethodToken(value1, value2) {
+        let methodData = {
+            method: `${value1}`,
+            headers: {
+                'Content-Type' : 'application/json',
+                Authorization: `Bearer ${value2}`,
+            }
+        }
+        return methodData
+    }
+    
