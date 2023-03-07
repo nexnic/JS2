@@ -1,5 +1,5 @@
-import {formsn } from '../base/domcontroller.mjs';
-import { ValidEmail  } from './validator.mjs';
+import {formsn , formsmComment } from '../base/domcontroller.mjs';
+import { ValidEmail, ValidToken } from './validator.mjs';
 import { metodPOST } from './methods.mjs';
 import { fetchAPI } from './fetch.mjs';
 
@@ -23,11 +23,21 @@ formsn.addEventListener('submit', (event) => {
             localStorage.setItem('email', `${value.email}`);
             localStorage.setItem('name', `${value.name}`);
         } )
-        console.log(promise1)
-        window.location.href = 'main.html'
+        
+        setInterval(() => {
+            let token = localStorage.getItem('accessToken');
+            if(token){
+                window.location.href = 'main.html'
+            }    
+        }, 300);
+        
     }
     event.preventDefault();
 })
+
+
+
+
 
 
 

@@ -19,3 +19,10 @@
             export const formsnbtn = document.querySelector('#s')
 // footer 
 
+// Main Page 
+        export const NewsFeed = document.querySelector('#newsFeed');
+
+    // form 
+        // Commect 
+            export const formsmComment = document.querySelector('#comment');
+        

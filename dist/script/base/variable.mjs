@@ -17,15 +17,11 @@ export const BASE_URL = 'https://nf-api.onrender.com';
 export const apiID = {
     1: '/api/v1/social/auth/login',
     2: '/api/v1/social/auth/register',
+    3: '/api/v1/social/posts',
+    4: '/api/v1/social/profiles', 
 };
 
 
-export const API_URL = {
-    BASE_URL: 'https://nf-api.onrender.com',
-    register_URL: '/api/v1/social/auth/register',
-    login_URL: '/api/v1/social/auth/login',
-    post_URL: '/api/v1/social/posts'
-}
 
 // Value need for Register user 
     // Emali , noroff.com !requier 
