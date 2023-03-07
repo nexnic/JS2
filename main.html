@@ -4,15 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./dist/css/main.css">
+    <meta name="description" content="Social Media">
+    <meta name="keywords" content="social, media, connect,">
+    <meta name="author" content="Kent Erik Hole">
     <title>Document</title>
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/6b4917e13e.js" crossorigin="anonymous"></script>
+    <!-- CSS file -->
+    <link rel="stylesheet" href="./dist/css/main.css">
 </head>
 <body>
-    <header></header>
+    <header>
+
+    </header>
     <main>
         <section id="newsFeed"></section>
     </main>
-
+    <nav class="navbar fixed-bottom bg-secondary">
+        <div class="container justify-content-center">
+            <div class="btn-group dropup">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa-solid fa-house"></i>
+                </button>
+                <div class="dropdown-menu">
+                    <!-- Dropdown menu links -->
+                    <a href="">test</a>
+                    <a href="">test</a>
+                </div>
+            </div>
+            <div class="btn-group dropup">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+        </div>
+        <div class="btn-group dropup">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="" alt="" width="32" height="32" class="rounded-circle">
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </div>
+    </div>
+    </nav>
+    <!-- Bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
     <script type="module" src="./dist/script/pages/main.mjs"></script>
     <script type="module" src="./dist/script/components/form.mjs"></script>
 </body>
