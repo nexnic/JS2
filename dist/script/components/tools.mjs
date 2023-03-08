@@ -23,6 +23,5 @@ export function timeData(){
 
 export function FetchResult(value1){
     let storage = localStorage.getItem('result');
-    
     localStorage.setItem(`${value1}`, storage)
 }
