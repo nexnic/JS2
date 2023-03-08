@@ -20,7 +20,7 @@
 // footer 
 
 // Main Page 
-        export const NewsFeed = document.querySelector('#newsFeed');
+        export const feed = document.querySelector('#feed');
 
     // form 
         // Commect 
