@@ -28,6 +28,7 @@ export function ShowFeed() {
                             ${sm.body}
                         </p>
                         <div class="d-flex text-muted pt-3">
+                        <img src="./dist/assest/Default_profile.svg" alt="" class="bg-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32"/> 
                             <p class="small lh-sm">
                                 <strong class="d-block text-gray-dark">
                                 @Username
