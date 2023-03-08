@@ -18,5 +18,9 @@ export function cleanLocalStorage() {
 }
 
 export function timeData(){
+
+}
+
+export function FetchResult(value1){
     
 }
