@@ -16,7 +16,9 @@ BuildNav()
 // 
 
 export function feedPost() {
-
-
-
+    fetchToken('test', 3, 'GET');
+    let localData = localStorage.getItem('result')
+    let Post = JSON.parse(localData);
+    
 }
+feedPost()
