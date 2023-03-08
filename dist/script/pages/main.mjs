@@ -8,7 +8,8 @@
             import {BuildNav} from '../components/nav.mjs';
         // Fetch 
             import {fetchToken} from '../components/fetch.mjs';
-
+        // Tools
+            import {FetchResult} from '../components/tools.mjs';
 
 
 // Build nav 
@@ -17,8 +18,7 @@ BuildNav()
 
 export function feedPost() {
     fetchToken('test', 3, 'GET');
-    let localData = localStorage.getItem('result')
-    let Post = JSON.parse(localData);
+    
     
 }
 feedPost()
