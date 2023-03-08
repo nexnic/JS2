@@ -73,6 +73,24 @@ export async function fetchtest(value1,value2){
     }
 }
 
+export async function fetchToken(value1, value2, value3) {
+    let Datainput = value3
+    let url = findAPIID(value2)
+    const DataStoreage  = JSON.parse(localStorage.getItem('user'));
+    const method = MethodToken(Datainput, DataStoreage.accessToken);
+    console.log(method)
+    try{
+        fetch(url, method)
+        .then((response) => response.json())
+        .then((json) => {
+            let result = JSON.stringify(json)
+            localStorage.setItem('result', result);
+        })
+
+    }catch(error) {
+        console.log(error);
+    }
+}   
 
 function findAPIID(value1) {
     let index = value1
