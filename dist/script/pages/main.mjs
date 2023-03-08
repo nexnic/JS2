@@ -9,8 +9,9 @@
         // Fetch 
             import {fetchToken} from '../components/fetch.mjs';
         // Tools
-            import {FetchResult} from '../components/tools.mjs';
-
+            import {FetchResult , RemoveLocalStore} from '../components/tools.mjs';
+        // POST 
+            import { ShowFeed } from '../components/post.mjs'
 
 // Build nav 
 BuildNav()
@@ -19,6 +20,8 @@ BuildNav()
 export function feedPost() {
     fetchToken('test', 3, 'GET');
     FetchResult('post');
-    
+    RemoveLocalStore('result');
+    ShowFeed()
+
 }
 feedPost()
