@@ -28,3 +28,17 @@
     // Form 
         // Search Bar 
             export const formsmSearch =  document.querySelector('#form-search');
+    // navigation
+        // buttons 
+            // Profile Image 
+                export const navProfileImage = document.querySelector('#dropdown09');
+            // Profile 
+                export const btnProfile = document.querySelector('#btn_profile');
+            // Settings 
+                export const btnSettings = document.querySelector('#btn_settings');
+            // Sign out 
+                export const btnLogout = document.querySelector('#btn_logout');
+        // Input Field
+            // Search Field 
+                export const Searchinput = document.querySelector('#Search'); 
+            
