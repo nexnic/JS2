@@ -13,7 +13,6 @@ export function CheckAfterPost(){
 export function ShowFeed() {
     let Neewsarray = JSON.parse(localStorage.getItem('post'));
     Neewsarray.forEach(sm => {
-        console.log(sm)
         if(sm.title && sm.media && sm.body){
             feed.innerHTML += `
                 <div class="card" style="width: 30rem;">
@@ -28,15 +27,19 @@ export function ShowFeed() {
                         <p class="card-text"> 
                             ${sm.body}
                         </p>
+                        <div class="d-flex text-muted pt-3">
+                            <p class="small lh-sm">
+                                <strong class="d-block text-gray-dark">
+                                @Username
+                                </strong>
+                                Some representative placeholder content, with some information about this user. Imagine this being some sort of status update, perhaps?
+                            </p>
+                        </div>
                         <form method="post" id="comment" class="input-group mb-3">
                             <input type="text" class="form-control" placeholder="comment" aria-label="comment" aria-describedby="basic-addon2">
-                                <div class="input-group-append">
-                                    <button class="btn btn-outline-secondary" type="submit">Add</button>
-                                </div>
                         </form>
                     </div> 
                 </div>
-
             `
         }
     });
