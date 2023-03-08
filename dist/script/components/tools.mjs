@@ -16,3 +16,7 @@ export function cleanLocalStorage() {
         return false
     }
 }
+
+export function timeData(){
+    
+}
