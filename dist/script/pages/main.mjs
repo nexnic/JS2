@@ -18,7 +18,7 @@ BuildNav()
 
 export function feedPost() {
     fetchToken('test', 3, 'GET');
-    
+    FetchResult('post');
     
 }
 feedPost()
