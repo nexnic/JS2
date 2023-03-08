@@ -1,5 +1,5 @@
 
-import {NewsFeed} from '../base/domcontroller.mjs'
+import {feed} from '../base/domcontroller.mjs'
 
 
 export function CheckAfterPost(){
@@ -15,7 +15,7 @@ export function ShowFeed() {
     Neewsarray.forEach(sm => {
         console.log(sm)
         if(sm.title && sm.media && sm.body){
-            NewsFeed.innerHTML += `
+            feed.innerHTML += `
                 <div class="card" style="width: 30rem;">
                     <img class="card-img-top" src="${sm.media}" alt="Image about ${sm.title}"> 
                     <div class="card-header">
