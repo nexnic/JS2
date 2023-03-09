@@ -27,21 +27,34 @@ export function ShowFeed() {
                         <p class="card-text"> 
                             ${sm.body}
                         </p>
-                        <div class="d-flex text-muted pt-3">
-                        <img src="./dist/assest/Default_profile.svg" alt="" class="bg-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32"/> 
-                            <p class="small lh-sm">
-                                <strong class="d-block text-gray-dark">
-                                @Username
-                                </strong>
-                                Some representative placeholder content, with some information about this user. Imagine this being some sort of status update, perhaps?
-                            </p>
+                        <div class="btn-group-toole" data-toggle="button">
+                            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                Follow
+                            </button>
+                            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" id="${sm.id}">
+                                Read comments ${sm._count.comments}
+                            </button>
                         </div>
-                        <form method="post" id="comment" class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="comment" aria-label="comment" aria-describedby="basic-addon2">
-                        </form>
                     </div> 
                 </div>
             `
         }
     });
 }
+
+/* 
+    <img src="./dist/assest/Default_profile.svg" alt="" class="bg-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32"/> 
+                            <p class="small lh-sm">
+                                <strong class="d-block text-gray-dark">
+                                @Username
+                                </strong>
+                                Some representative placeholder content, with some information about this user. Imagine this being some sort of status update, perhaps?
+                            </p>
+                        
+                        <form method="post" id="comment" class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="comment" aria-label="comment" aria-describedby="basic-addon2">
+                        </form>
+                        <div class="d-flex text-muted pt-3">
+                        <a class="nav-link"  href="#">Follow</a>
+                        </div>
+*/
