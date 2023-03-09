@@ -31,7 +31,7 @@ export function ShowFeed() {
                             <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
                                 Follow
                             </button>
-                            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" id="${sm.id}">
+                            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" id="${sm.id}" onclick="ShowComments(${sm.id})">
                                 Read comments ${sm._count.comments}
                             </button>
                         </div>
