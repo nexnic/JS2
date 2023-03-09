@@ -28,3 +28,8 @@ formsmSearch.addEventListener("keypress", function(event) {
     }
     
 })
+
+function ShowComments(value1) {
+    let PostId = value1
+    console.log(PostId);
+}
