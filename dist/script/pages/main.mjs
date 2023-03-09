@@ -22,6 +22,12 @@ export function feedPost() {
     FetchResult('post');
     RemoveLocalStore('result');
     ShowFeed()
-
 }
 feedPost()
+
+let post = JSON.parse(localStorage.getItem('post'));
+function testfunction(){
+    post.forEach(sm => {
+        
+    });
+}
