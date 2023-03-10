@@ -16,3 +16,16 @@ export function cleanLocalStorage() {
         return false
     }
 }
+
+export function timeData(){
+
+}
+
+export function FetchResult(value1){
+    let storage = localStorage.getItem('result');
+    localStorage.setItem(`${value1}`, storage)
+}
+
+export function RemoveLocalStore(value1){
+    localStorage.removeItem(value1); 
+}

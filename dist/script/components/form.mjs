@@ -6,7 +6,7 @@ import {Redirect } from './tools.mjs';
 
 
 
-/* formsn.addEventListener('submit', (event) => {
+formsn.addEventListener('submit', (event) => {
     let id = 1;
     let email = formsn.elements['email'].value 
     let _password = formsn.elements['password'].value
@@ -41,7 +41,7 @@ import {Redirect } from './tools.mjs';
     event.preventDefault();
 })
 
-*/
+
 
 
 

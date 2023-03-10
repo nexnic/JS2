@@ -8,6 +8,7 @@
         // Navigation
         // Fetch 
             import {fetchToken} from '../components/fetch.mjs';
+import { metodPOST } from '../components/methods.mjs';
 
 
 
@@ -28,3 +29,4 @@ formsmSearch.addEventListener("keypress", function(event) {
     }
     
 })
+
