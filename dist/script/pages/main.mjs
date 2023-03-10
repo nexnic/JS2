@@ -2,7 +2,7 @@
 // Import file´s 
     // BASE
         // Dom Controller 
-            import {navProfileImage} from '../base/domcontroller.mjs';
+            import {navProfileImage , feed} from '../base/domcontroller.mjs';
     // Components
         // Nav
             import {BuildNav} from '../components/nav.mjs';
@@ -14,20 +14,14 @@
             import { ShowFeed } from '../components/post.mjs'
 
 // Build nav 
-BuildNav()
+//BuildNav()
 // 
 
 export function feedPost() {
     fetchToken('test', 3, 'GET');
-    FetchResult('post');
-    RemoveLocalStore('result');
+    FetchResult('postData');
     ShowFeed()
 }
 feedPost()
 
-let post = JSON.parse(localStorage.getItem('post'));
-function testfunction(){
-    post.forEach(sm => {
-        
-    });
-}
+ 
