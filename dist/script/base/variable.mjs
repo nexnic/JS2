@@ -19,6 +19,7 @@ export const apiID = {
     2: '/api/v1/social/auth/register',
     3: '/api/v1/social/posts',
     4: '/api/v1/social/profiles', 
+    5: '/api/v1/social/posts?_author=true&_reactions=true&_comments=true'
 };
 
 
