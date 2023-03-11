@@ -13,45 +13,98 @@
     <!-- CSS file -->
     <link rel="stylesheet" href="./dist/css/main.css">
 </head>
-<body>
-    <header></header>
-    <main>
-        <div>   
-            <h1>
-                Smedia
-            </h1>
-            <p class="lead">
-                Connect and Share with the World: Join the Social Media Revolution!
-            </p>
+<body class="bg-dark">
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-lg-auto d-flex justify-content-md-center align-items-center vh-10 text-white">
+                <h1 class="visually-hidden">social media</h1>
+                <div class="px-1 py-5 text-center w-75">
+                    <h2 class="fw-blod">social media</h2>
+                    <p class="fw-semiblod">
+                        Welcome to our social media platform! We believe in empowering our community to connect, share, and inspire. Join us as we celebrate everyday heroes who make a difference in our world.
+                    </p>
+                    <p class="fw-normal">
+                        Together, we can create a better tomorrow by highlighting the good in the world and inspiring others to join the movement. Join us in celebrating the heroes among us!
+                    </p>
+                </div>
+            </div>
+            
         </div>
-        <div>
-            <form method="post" id="signin">
-                <!-- Need to add logo  -->
-                <img src="" alt="">
-                <h1 id="headline__form">Pleas sign in</h1>
-                <div>
-                    <label for="email"></label>
-                    <input type="text" id="signin_email" name="email" plassholder="email">
-                    <small name ="email_error"></small>
+    </header>
+    <main>
+        <div class="d-flex flex-row justify-content-md-center align-items-center vh-50 ">
+            <div class="sm-form rounded border shadow bg-white">
+                <div class="sm-form-header">
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="site-signin-tab" data-bs-toggle="tab" data-bs-target="#site-signin" type="button" role="tab" aria-controls="site-signin" aria-selected="false">Sign In</button>
+                        <button class="nav-link" id="site-signup-tab" data-bs-toggle="tab" data-bs-target="#site-signup" type="button" role="tab" aria-controls="nav-profile" aria-selected="true">Register User</button>
+                    </div>
                 </div>
-                <div>
-                    <input type="text" id="signin_password" name="password" placeholder="password">
-                    <label for="">Password</label>
-                    <small></small>
+                <div class="sm-form-body p-4">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="site-signin" role="tabpanel" aria-labelledby="signin-tab">
+                            <h3 class="h3 mb-3 fw-normal">
+                                Please sign in
+                            </h3>
+                            <form method="post" id="form-signin">
+                                <div class="form-floating pb-2">
+                                    <input  type="email" class="form-control" id="form-signin__email" name="email" placeholder="name@example.com">
+                                    <label for="email"> Email Address</label>
+                                </div>
+                                <div class="form-floating pb-4">
+                                    <input type="password" class="form-control" id="form-signin__password " name="password" placeholder="password">
+                                    <label for="password">Password</label>
+                                </div>
+                                <div class="form-floating">
+                                    <button class="btn btn-primary" type="submit">Sign in</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade show" id="site-signup" role="tabpanel" aria-labelledby="site-signup-tab">
+                            <h3>
+                                Sign up
+                            </h3>
+                            <form method="post" id="form-signup">
+                                <div class="form-floating pb-2">
+                                    <input type="text" class="form-control" id="form-signup__name" name="name" Placeholder="FullName">
+                                    <label for="name">Fullname</label>
+                                </div>
+                                <div class="form-floating pb-2">
+                                    <input type="email" class="form-control" id="form-signup__email" name="email" placeholder="name@example.com">
+                                    <label for="email"> Email Address</label>
+                                    <div class="form-text">
+    
+                                    </div>
+                                </div>
+                                <div class="form-floating pb-2">
+                                    <input type="password" class="form-control" id="form-signup_password" name="password" placeholder="password">
+                                    <label for="password">Password</label>
+                                </div>
+                                <div class="form-floating pb-2">
+                                    <input type="text" class="form-control" id="form-signup-banner" name="banner" placeholder="Banner">
+                                    <label for="banner">Url to link</label>
+                                </div>
+                                <div class="form-floating pb-4">
+                                    <input type="text" class="form-control" id="form-signup-avatar" name="avatar" placeholder="avatar">
+                                    <label for="avatar">url image</label>
+                                </div>
+                                <div class="form-floating">
+                                    <button class="btn btn-primary" type="submit">Sign in</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <button type="submit">Sign in</button>
-                <ul>
-                    <li>
-                        <a href="#" id="btn_register">Register</a>
-                    </li>
-                    <li>
-                        <a href="#" id="btn_forgotPWD">forgot password</a>
-                    </li>
-                </ul>
-            </form>
+            </div>
         </div>
     </main>
-    <footer></footer>
-    <script type="module" src="./dist/script/components/form.mjs"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <!--<script type="module" src="./dist/script/components/form.mjs"></script> -->
 </body>
 </html>
