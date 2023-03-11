@@ -14,40 +14,44 @@
     <link rel="stylesheet" href="./dist/css/main.css">
 </head>
 <body>
-    <header></header>
-    <main class="">
-        <ul class="nav nav-tabs" id="" role="tablist">
-            <li class="nav-item">
-                <button class="nav-link active" id="signin-tab" data-bs-toogle="tab" data-bs-target="#signin" aria-controls="#signin" aria-selected="true">Sign in</button>
-            </li>
-            <li class="nav-item">
-                <button class="nav-link" id="register-tab" data-bs-toogle="tab" data-bs-target="#register" aria-controls="#register" aria-selected="false">Register</button>
-            </li>
-        </ul>
-        <div class="tab-content" id="">
-            <div class="tab-pane fade show active" id="signin" role="tabpanel" aria-labelledby="signin-tab">
-                <div>
-                    <h2>
-                        Welcome
-                    </h2>
+    <div class="d-flex flex-row justify-content-md-center align-items-center vh-100 ">
+        <div class="sm-form rounded border shadow">
+            <div class="sm-form-header">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="signin-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="signin" aria-selected="true">Sign In</button>
+                    <button class="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Register User</button>
                 </div>
             </div>
-            <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
-                <div>
-                    <h2>
-                        Register user
-                    </h2>
+            <div class="sm-form-body p-4">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="signin" role="tabpanel" aria-labelledby="signin-tab">
+                        <h3 class="h3 mb-3 fw-normal">
+                            Please sign in
+                        </h3>
+                        <form method="post" id="signin">
+                            <div class="form-floating pb-2">
+                                <input  type="email" class="form-control" id="signin_email" name="email" placeholder="name@example.com">
+                                <label for="email"> Email Address</label>
+                            </div>
+                            <div class="form-floating pb-4">
+                                <input type="password" class="form-control" id="signin_password " name="password" placeholder="password">
+                                <label for="password">Password</label>
+                            </div>
+                            <div class="form-floating">
+                                <button class="btn btn-primary" type="submit">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </main>
-    <footer></footer>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
         integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
         crossorigin="anonymous"></script>
-    <script type="module" src="./dist/script/components/form.mjs"></script>
+    <!--<script type="module" src="./dist/script/components/form.mjs"></script> -->
 </body>
 </html>
