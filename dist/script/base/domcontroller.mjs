@@ -51,4 +51,5 @@
         // Input Field
             // Search Field 
                 export const Searchinput = document.querySelector('#Search'); 
-            
+// Error 
+    export const errorBox = document.querySelector('.alert');
