@@ -23,6 +23,11 @@ export const apiID = {
 };
 
 
+export const ErrorText = {
+    1: 'The email address you provided is not valid. Please ensure that your email address contains either "@domain.com" or "@doma.com" in order to proceed. Kindly check and correct the email address provided. Thank you.', 
+    2: 'We are sorry, but there was an error processing your request through the API. If the problem persists, please contact our support team for further assistance. Thank you.',
+}
+
 
 // Value need for Register user 
     // Emali , noroff.com !requier 
