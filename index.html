@@ -14,38 +14,77 @@
     <link rel="stylesheet" href="./dist/css/main.css">
 </head>
 <body>
-    <div class="d-flex flex-row justify-content-md-center align-items-center vh-100 ">
-        <div class="sm-form rounded border shadow">
-            <div class="sm-form-header">
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <button class="nav-link active" id="signin-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="signin" aria-selected="true">Sign In</button>
-                    <button class="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Register User</button>
+    <header>
+
+    </header>
+    <main>
+        <div class="d-flex flex-row justify-content-md-center align-items-center vh-100 ">
+            <div class="sm-form rounded border shadow">
+                <div class="sm-form-header">
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="site-signin-tab" data-bs-toggle="tab" data-bs-target="#site-signin" type="button" role="tab" aria-controls="site-signin" aria-selected="false">Sign In</button>
+                        <button class="nav-link" id="site-signup-tab" data-bs-toggle="tab" data-bs-target="#site-signup" type="button" role="tab" aria-controls="nav-profile" aria-selected="true">Register User</button>
+                    </div>
                 </div>
-            </div>
-            <div class="sm-form-body p-4">
-                <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="signin" role="tabpanel" aria-labelledby="signin-tab">
-                        <h3 class="h3 mb-3 fw-normal">
-                            Please sign in
-                        </h3>
-                        <form method="post" id="signin">
-                            <div class="form-floating pb-2">
-                                <input  type="email" class="form-control" id="signin_email" name="email" placeholder="name@example.com">
-                                <label for="email"> Email Address</label>
-                            </div>
-                            <div class="form-floating pb-4">
-                                <input type="password" class="form-control" id="signin_password " name="password" placeholder="password">
-                                <label for="password">Password</label>
-                            </div>
-                            <div class="form-floating">
-                                <button class="btn btn-primary" type="submit">Sign in</button>
-                            </div>
-                        </form>
+                <div class="sm-form-body p-4">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="site-signin" role="tabpanel" aria-labelledby="signin-tab">
+                            <h3 class="h3 mb-3 fw-normal">
+                                Please sign in
+                            </h3>
+                            <form method="post" id="signin">
+                                <div class="form-floating pb-2">
+                                    <input  type="email" class="form-control" id="signin_email" name="email" placeholder="name@example.com">
+                                    <label for="email"> Email Address</label>
+                                </div>
+                                <div class="form-floating pb-4">
+                                    <input type="password" class="form-control" id="signin_password " name="password" placeholder="password">
+                                    <label for="password">Password</label>
+                                </div>
+                                <div class="form-floating">
+                                    <button class="btn btn-primary" type="submit">Sign in</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade show" id="site-signup" role="tabpanel" aria-labelledby="site-signup-tab">
+                            <h3>
+                                Sign up
+                            </h3>
+                            <form method="post" id="form-signup">
+                                <div class="form-floating pb-2">
+                                    <input type="text" class="form-control" id="form-signup__name" name="name" Placeholder="FullName">
+                                    <label for="name">Fullname</label>
+                                </div>
+                                <div class="form-floating pb-2">
+                                    <input type="email" class="form-control" id="form-signup__email" name="email" placeholder="name@example.com">
+                                    <label for="email"> Email Address</label>
+                                    <div class="form-text">
+    
+                                    </div>
+                                </div>
+                                <div class="form-floating pb-2">
+                                    <input type="password" class="form-control" id="form-signup_password" name="password" placeholder="password">
+                                    <label for="password">Password</label>
+                                </div>
+                                <div class="form-floating pb-2">
+                                    <input type="text" class="form-control" id="form-signup-banner" name="banner" placeholder="Banner">
+                                    <label for="banner">Url to link</label>
+                                </div>
+                                <div class="form-floating pb-4">
+                                    <input type="text" class="form-control" id="form-signup-avatar" name="avatar" placeholder="avatar">
+                                    <label for="avatar">url image</label>
+                                </div>
+                                <div class="form-floating">
+                                    <button class="btn btn-primary" type="submit">Sign in</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
+    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
