@@ -6,7 +6,7 @@
 */
 
 'use strict';
-
+export const _token  = localStorage.getItem('UserData')
 export const filterREG = [
     { name: 'domain', item: 'noroff.no' },
     { name: 'domain', item: 'stud.noroff.no'},
@@ -19,7 +19,8 @@ export const apiID = {
     2: '/api/v1/social/auth/register',
     3: '/api/v1/social/posts',
     4: '/api/v1/social/profiles', 
-    5: '/api/v1/social/posts?_author=true&_reactions=true&_comments=true'
+    5: '/api/v1/social/posts?_author=true&_reactions=true&_comments=true',
+    6: '/api/v1/social/posts?_author=true',
 };
 
 
@@ -31,6 +32,8 @@ export const ErrorText = {
     5: 'Pleas enter Your name',
     6: 'Pleas enter Your Email', 
     7: 'Pleas enter Your Password',
+    8: 'You are missing a title',
+    9: 'you are missing the description',
 }
 
 export const userTemp = {

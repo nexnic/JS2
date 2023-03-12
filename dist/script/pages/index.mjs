@@ -101,7 +101,6 @@ async function CheckApiSignup(value1,value2){
             title: userSaved.message.message
          }
          ErrorMSgAPI(Errormsg)
-         
       }
       else{
          toggelClass(signUp, 'visually-hidden')

@@ -18,14 +18,26 @@ function MethodSignin(value1, value2){
     return obj
 }
 
-function MethodToken(value1,){
-    let token = localStorage.getItem('accessToken')
+function MethodToken(value1,value2){
     let obj = {
         method: `${value1}`,
         headers: {
             'Content-Type' : 'application/json',
-            Authorization: `Bearer ${token}`,
+            Authorization: `Bearer ${value2}`,
         }
+    }
+    return obj 
+}
+
+function MethodTokenBody(value1, value2, value3) {
+
+    let obj ={
+        method: `${value1}`,
+        headers: {
+            'Content-Type' : 'application/json',
+            Authorization: `Bearer ${value2}`,
+        },
+        body: JSON.stringify(value3),
     }
     return obj 
 }
@@ -39,5 +51,7 @@ function methodSignUp(value1, value2){
     }
 }
 
-export{MethodSignin, MethodToken, methodSignUp}
+
+
+export{MethodSignin, MethodToken, MethodTokenBody,  methodSignUp}
 

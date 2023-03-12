@@ -6,7 +6,7 @@
 // <img src="" alt="" width="22" height="22" class="rounded-circle"></img>
 
 export function BuildNav(){
-   let userData = localStorage.getItem('user')
+   let userData = localStorage.getItem('UserData')
     addProfileImage(userData)
 }
 
@@ -17,6 +17,10 @@ function addProfileImage(value1){
         navProfileImage.innerHTML += `
         <img src="./dist/assest/Default_profile.svg" alt="" width="22" height="22" class="rounded-circle"></img>
 
+        `
+    }else {
+        navProfileImage.innerHTML += `
+        <img src="${userData.avatar}" alt="" width="22" height="22" class="rounded-circle"></img>
         `
     }
 }

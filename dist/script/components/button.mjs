@@ -20,3 +20,7 @@ export function signoutbtn() {
         console.log('fail');
     }
 }
+
+export function NewPostbtn(){
+    
+}

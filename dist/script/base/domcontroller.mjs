@@ -32,6 +32,9 @@
                 export const signupAvatar = document.querySelector('#form-signup-avatar');
             // Form Btn 
                 export const signUp = document.querySelector('.btn-signup');
+        // New Post Form
+            // Form
+                export const NewPOST = document.querySelector('#form-NewPost');
 // footer 
 
 // Main Page 
@@ -53,10 +56,13 @@
                 export const btnSettings = document.querySelector('#btn_settings');
             // Sign out 
                 export const btnLogout = document.querySelector('#btn_logout');
+            // New Post
+                export const btnNewPost = document.querySelector('#btn_newPost');
         // Input Field
             // Search Field 
                 export const Searchinput = document.querySelector('#Search'); 
 // Error 
     export const errorBox = document.querySelector('.alert');
 
+    
     
