@@ -22,25 +22,7 @@ import {findAPIID, CreateErrorMSG} from '../components/tools.mjs';
         console.log(error)
     }
 }
-let user =  {
-    email : 'test_user_demo@noroff.no',
-    password :'testtest1234',
-}
 
-
-
-
-
-let MetodData = {
-    method: 'GET',
-    headers: {
-        'Content-Type' : 'application/json',
-    },
-    body: JSON.stringify(user)
-}
-
-
-APICALL(MetodData,1)
 
 
 /*

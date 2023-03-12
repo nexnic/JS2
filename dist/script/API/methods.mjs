@@ -30,5 +30,14 @@ function MethodToken(value1,){
     return obj 
 }
 
-export{MethodSignin, MethodToken}
+function methodSignUp(value1, value2){
+    let obj = {
+        method: `${value1}`, 
+        headers: {
+            'Content-Type' : 'application/json',
+        }
+    }
+}
+
+export{MethodSignin, MethodToken, methodSignUp}
 

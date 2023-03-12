@@ -52,7 +52,7 @@ export function findAPIID(value1) {
     return url
 }
 
-function CreateErrorMSG(value1){
+export function CreateErrorMSG(value1){
     const errorMSG = document.querySelector('#form-Error__msg');
     let data = JSON.parse(localStorage.getItem('Error'))
     const datasize = data.errors.length
@@ -63,14 +63,14 @@ function CreateErrorMSG(value1){
 
 /**
  * 
- * @param {Value of localStorage} value1 
- * @returns 
+ * @param {*} value1 
+ * @param {*} value1 
  */
+export function toggelClass(value1, value2){
+    value1.classList.toggle(`${value2}`)
+}
 
 
 
 
 
-
-
-export {CreateErrorMSG  }

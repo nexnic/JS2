@@ -10,6 +10,22 @@ export function ValidEmail(value1) {
     return checkEmail 
 }
 
+export function ValidName(value1){
+    
+    let name = value1
+    const regex = /^[a-zA-Z0-9_]+$/;
+
+    let CheckName = regex.test(name); 
+    return CheckName
+}
+
+export function ValidPassword(value1){
+    if(value1.length >= 8){
+        return true 
+    }else{
+        return false
+    }
+}
 
 
 // Token validator 

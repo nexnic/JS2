@@ -16,8 +16,10 @@
                 export const signPws = document.querySelector('#form-signin__password');
             // Form Error 
                 export const signError = document.querySelector('#form-Error__msg')
+            // Form Btn 
+                export const signBTN = document.querySelector('.btn-signin');
         // Sign up form
-            export const signupform = document.querySelector('#form-signup');
+            export const signupForm = document.querySelector('#form-signup');
             // Form Name 
                 export const signupName =document.querySelector('#form-signup__name');
             // From Email   
@@ -28,7 +30,8 @@
                 export const signupBanner = document.querySelector('#form-signup-banner');
             // Form Avatar 
                 export const signupAvatar = document.querySelector('#form-signup-avatar');
-            
+            // Form Btn 
+                export const signUp = document.querySelector('.btn-signup');
 // footer 
 
 // Main Page 
