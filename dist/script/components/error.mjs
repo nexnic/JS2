@@ -13,7 +13,6 @@ export function ErrorMSg(value1) {
         </p>
     `
     errorBox.classList.add('alert-warning');
-
     setTimeout(() => {
         errorBox.classList.remove('alert-warning');
     }, 3000);

@@ -13,7 +13,9 @@
             // Form Email 
                 export const signEmail = document.querySelector('#form-signin__email');
             // Form Password
-                export const signPws = document.querySelector('#form-signin__password')
+                export const signPws = document.querySelector('#form-signin__password');
+            // Form Error 
+                export const signError = document.querySelector('#form-Error__msg')
         // Sign up form
             export const signupform = document.querySelector('#form-signup');
             // Form Name 
@@ -53,3 +55,5 @@
                 export const Searchinput = document.querySelector('#Search'); 
 // Error 
     export const errorBox = document.querySelector('.alert');
+
+    

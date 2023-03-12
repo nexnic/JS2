@@ -7,7 +7,7 @@ let MetodData = {
     }
 }
 
-let MetodToken = {
+let test = {
     method: '2',
     headers: {
         'Content-Type' : 'application/json',
@@ -18,12 +18,11 @@ let MetodToken = {
     let email =  'test_user_demo@noroff.no'
     let password = 'testtest1234'
 
-    let userData = {
-        email: '',
-        password: '',
-    };
+    
 
 // POST 
+    
+
    export function metodPOST(value1, value2){
         let postData = MetodData;
         let tempUser = userData;

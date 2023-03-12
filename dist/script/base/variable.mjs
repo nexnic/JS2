@@ -28,6 +28,18 @@ export const ErrorText = {
     2: 'We are sorry, but there was an error processing your request through the API. If the problem persists, please contact our support team for further assistance. Thank you.',
 }
 
+export const userTemp = {
+    email: '',
+    password: '',
+};
+
+export const MethodTemp  = {
+    method: '2',
+    headers: {
+        'Content-Type' : 'application/json',
+    }
+}
+
 
 // Value need for Register user 
     // Emali , noroff.com !requier 
