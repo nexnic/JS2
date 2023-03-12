@@ -18,13 +18,10 @@ export async function fetchAPI(value1, value2) {
 }
 
 
-export async function fetchData(value1, value2){
+export async function fetchData(value1, ){
     const url = findAPIID(value1);
     const method = value2;
-
     fetch(url,method)
-    
-    
 }
 
 export async function fetchlogin(value1, value2) {
@@ -92,11 +89,6 @@ export async function fetchToken(value1, value2, value3) {
     }
 }   
 
-function findAPIID(value1) {
-    let index = value1
-    let Endpoint = apiID[index];
-    let url = BASE_URL + Endpoint;
-    return url
-}
+
 
 

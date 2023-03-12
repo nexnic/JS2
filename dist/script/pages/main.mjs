@@ -12,9 +12,19 @@
             import {FetchResult , RemoveLocalStore} from '../components/tools.mjs';
         // POST 
             import { ShowFeed } from '../components/post.mjs'
-
+        // Import file 
+    // BASE 
+        // Dom Controller 
+        import { btnProfile, btnSettings, btnLogout, formsmSearch, Searchinput } from './domcontroller.mjs';
+        // Components 
+            // Button 
+                import {Profilebtn, signoutbtn} from '../components/button.mjs';
+            // Navigation
+            // Fetch 
+                import {fetchToken} from '../components/fetch.mjs';
+                import { metodPOST } from '../components/methods.mjs';
 // Build nav 
-//BuildNav()
+BuildNav()
 // 
 
 export function feedPost() {
@@ -23,5 +33,12 @@ export function feedPost() {
     ShowFeed()
 }
 feedPost()
+
+
+btnProfile.addEventListener('click', (event)=> Profilebtn())
+
+btnSettings.addEventListener('click', (event) => Profilebtn())
+
+btnLogout.addEventListener('click', (event) => signoutbtn())
 
  

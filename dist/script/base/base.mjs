@@ -8,18 +8,14 @@
         // Navigation
         // Fetch 
             import {fetchToken} from '../components/fetch.mjs';
-import { metodPOST } from '../components/methods.mjs';
+            import { metodPOST } from '../components/methods.mjs';
 
 
 
 
 // Event Lostener
 
-btnProfile.addEventListener('click', (event)=> Profilebtn())
 
-btnSettings.addEventListener('click', (event) => Profilebtn())
-
-btnLogout.addEventListener('click', (event) => signoutbtn())
 
 formsmSearch.addEventListener("keypress", function(event) {
     if(event.key === 'Enter') {

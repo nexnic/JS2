@@ -6,17 +6,32 @@
 
 // header
 
-// main 
-
-    // Sign In form 
-        // Form 
-           export const formsn = document.querySelector('#signin');
-        // Email Input  
-            export const formsnEmail = document.querySelector('#signin_email');
-        // Password 
-            export const formsnPassword = document.querySelector('#signin_password');
-        // Submit Button 
-            export const formsnbtn = document.querySelector('#s')
+// Index HTML 
+    // Form 
+        // Sign In form
+            export const signform = document.querySelector('#form-signin');
+            // Form Email 
+                export const signEmail = document.querySelector('#form-signin__email');
+            // Form Password
+                export const signPws = document.querySelector('#form-signin__password');
+            // Form Error 
+                export const signError = document.querySelector('#form-Error__msg')
+            // Form Btn 
+                export const signBTN = document.querySelector('.btn-signin');
+        // Sign up form
+            export const signupForm = document.querySelector('#form-signup');
+            // Form Name 
+                export const signupName =document.querySelector('#form-signup__name');
+            // From Email   
+                export const signupEmail = document.querySelector('#form-signup__email');
+            // Form Password
+                export const signupPWS = document.querySelector('#form-signup_password');
+            // Form Banner 
+                export const signupBanner = document.querySelector('#form-signup-banner');
+            // Form Avatar 
+                export const signupAvatar = document.querySelector('#form-signup-avatar');
+            // Form Btn 
+                export const signUp = document.querySelector('.btn-signup');
 // footer 
 
 // Main Page 
@@ -41,4 +56,7 @@
         // Input Field
             // Search Field 
                 export const Searchinput = document.querySelector('#Search'); 
-            
+// Error 
+    export const errorBox = document.querySelector('.alert');
+
+    
