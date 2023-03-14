@@ -8,3 +8,5 @@
 
 ## Node_modules for sass & bootstrap 
 /Node_modules
+*.icloud
+.DS_Store
