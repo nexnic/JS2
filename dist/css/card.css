@@ -1,0 +1,87 @@
+/*
+    small: 540px
+    larg 960px  
+*/
+
+.cardsm {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid gray;
+    border-radius: 2%;
+    min-width: 540px;
+    max-width: 540px;
+    box-shadow: 1px 2px 8px 2px rgba(0,0,0,0.55);
+}
+
+.cardsm__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid gray;
+    width: 100%;
+    height: 50px;
+    background-color: gray;
+    z-index: 20;
+    overflow: hidden;
+}
+
+.cardsm__header--profile {
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    padding: 0 0 0 10px;
+}
+
+.cardsm__header--date {
+    display: inline-flex;
+    padding: 0 10px 0 0;
+}
+
+.cardsm__profileimg {
+    max-height: 50%;
+    object-fit: fill;
+    border-radius: 100%;
+}
+
+.cardsm__img {
+    max-width: 100%;
+    object-fit: fill;
+}
+
+.cardsm__body {
+    display: inline-flex;
+    flex-direction: column;
+}
+.cardsm__body--top {
+    background-color: dimgray;
+}
+
+.cardsm__body--header {
+    padding: 0 10px 0 10px;
+}
+
+.cardsm__body--body {
+    padding: 0 10px 0 10px;
+}
+
+.cardsm__extra {
+    display: flex;
+    max-width: 100%;    
+}
+
+.cardsm__extra--overview {
+    display: inline-flex;
+    max-width: 100%;
+    min-width: 100%;
+    padding-bottom: 10px;
+    justify-content: space-evenly;
+}
+
+.cardsm__heading {
+    
+}
+
+h4 {
+    margin: 0;
+}
