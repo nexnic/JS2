@@ -3,7 +3,7 @@ import { metodPOST } from "./methods.mjs";
 
 export function ValidEmail(value1) {
     let email =  value1;
-    const regex = new RegExp('[a-z0-9]+@noroff.no');
+    const regex = /^[a-z0-9._%+-]+@(noroff.no|stud.noroff.no)$/;
 
     let checkEmail =  regex.test(email);
     
@@ -21,8 +21,10 @@ export function ValidName(value1){
 
 export function ValidPassword(value1){
     if(value1.length >= 8){
+        console.log('password pass')
         return true 
     }else{
+        console.log('password fail')
         return false
     }
 }
