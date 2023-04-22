@@ -38,8 +38,6 @@ async function CheckAPIsign(value1,value2){
             title: userSaved.message.message
          }
          ErrorMSgAPI(Errormsg)
-            
-          
       }
       else{
          let UserData = JSON.stringify(userSaved)
@@ -57,7 +55,6 @@ signupForm.addEventListener('submit', (event)=> {
    let type = 'POST'
    const formData = {};
    
-   
    for(let i = 0; i < signupForm.elements.length; i++){
       const element = signupForm.elements[i];
       if(element.name){
@@ -69,20 +66,22 @@ signupForm.addEventListener('submit', (event)=> {
    }if(!formData.email){
       ErrorMSg(6)
    }if(!formData.password){
+      console.log('test1')
       ErrorMSg(5)
    }
    if(formData.name && formData.email && formData.password){
       let Checkmail = ValidEmail(formData.email);
       let CheckName = ValidName(formData.name)
       let CheckPassword = ValidPassword(formData.password)
+      console.log(Checkmail)
       if(!Checkmail){
-         ErrorMSg(3)
-         console.log('checkmail')
+         ErrorMSg(1)
+         console.log('teetetet')
       }if(!CheckName){
          ErrorMSg(4)
       }if(!CheckPassword){
          ErrorMSg(7)
-         
+         console.log('test2')
       }
       if(Checkmail && CheckName && CheckPassword){
          let obj = MethodSignin(type, formData)
@@ -95,8 +94,9 @@ signupForm.addEventListener('submit', (event)=> {
 async function CheckApiSignup(value1,value2){
    toggelClass(signUp, 'visually-hidden')
    try {
-      const userSaved = await FetchSingin(value1, value2); 
-      if(userSaved.type === 'Error'){
+      const userSaved = await FetchSingin(value1, value2);
+      console.log(userSaved.type) 
+      if(userSaved.type === 'Error' || userSaved.type === 'type'){
          let Errormsg= {
             title: userSaved.message.message
          }
@@ -104,8 +104,8 @@ async function CheckApiSignup(value1,value2){
       }
       else{
          toggelClass(signUp, 'visually-hidden')
-         let UserData = JSON.stringify(userSaved)
-         localStorage.setItem('RegUse', UserData)
+         // let UserData = JSON.stringify(userSaved)
+         // localStorage.setItem('RegUse', UserData)
       }
    } catch (error) {
       console.log(error)
