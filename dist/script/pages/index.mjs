@@ -66,7 +66,6 @@ signupForm.addEventListener('submit', (event)=> {
    }if(!formData.email){
       ErrorMSg(6)
    }if(!formData.password){
-      console.log('test1')
       ErrorMSg(5)
    }
    if(formData.name && formData.email && formData.password){
@@ -76,12 +75,10 @@ signupForm.addEventListener('submit', (event)=> {
       console.log(Checkmail)
       if(!Checkmail){
          ErrorMSg(1)
-         console.log('teetetet')
       }if(!CheckName){
          ErrorMSg(4)
       }if(!CheckPassword){
          ErrorMSg(7)
-         console.log('test2')
       }
       if(Checkmail && CheckName && CheckPassword){
          let obj = MethodSignin(type, formData)
